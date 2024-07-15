@@ -13,6 +13,6 @@ namespace EF_Core_Learning.Model
         public ICollection<UserRole> UserRoles { get; set; }
 
 
-
+        
     }
 }

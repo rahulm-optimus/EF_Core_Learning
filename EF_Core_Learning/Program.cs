@@ -57,7 +57,7 @@ internal class Program
             #region Remove and Delete
             var nameToDelete = context.Details.FirstOrDefault(p => p.UserId == 3);
             if (nameToDelete != null)
-            {
+{
                 context.Details.Remove(nameToDelete);
                 context.SaveChanges();
             }
@@ -65,7 +65,7 @@ internal class Program
 
             #region tracking and non-tracking
             foreach (var entry in context.ChangeTracker.Entries())
-            {
+    {
                 Console.WriteLine($"Entity:{entry.Entity.GetType().Name} " +
                     $"State : {entry.State.ToString()}");
             }
@@ -77,14 +77,14 @@ internal class Program
 
             Console.WriteLine("Roles having P in starting");
             foreach (var entry in nameHavingP)
-            {
+        {
 
                 Console.WriteLine($"user ID :{entry.UserId} , User Role :{entry.RoleName}");
             }
             #endregion
 
 
-
+            
 
 
         }

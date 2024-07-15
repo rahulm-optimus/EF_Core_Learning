@@ -119,6 +119,7 @@ namespace EF_Core_Learning.Migrations
                         new
                         {
                             PasswordId = 2,
+                            Password = "x5Qtjy2ftZQ$WqJC",
                             Password = "YjoTimXu&Bg8F4Oj",
                             UserId = 2
                         });
